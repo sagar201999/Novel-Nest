@@ -23,7 +23,7 @@ const Navbar = () => {
                                 <ul className="dropdown-menu">
                                     <li><Link className="dropdown-item" to="/action">Action</Link></li>
                                     <li><Link className="dropdown-item" to="/fiction">Fiction</Link></li>
-                                    <li><Link className="dropdown-item" to="/MysThri">Mystery/Thriller</Link></li>
+                                    <li><Link className="dropdown-item" to="/mysthri">Mystery/Thriller</Link></li>
                                     <li><Link className="dropdown-item" to="/scifi">Science Fiction</Link></li>
                                     <li><Link className="dropdown-item" to="/fantasy">Fantasy</Link></li>
                                     <li><Link className="dropdown-item" to="/romance">Romance</Link></li>
@@ -32,13 +32,14 @@ const Navbar = () => {
                                     <li><Link className="dropdown-item" to="/adult">Adult</Link></li>
                                     <li><Link className="dropdown-item" to="/comdey">Comedy</Link></li>
                                     <li><Link className="dropdown-item" to="/horror">Horror</Link></li>
+                                    <li><Link className="dropdown-item" to="/comics">Comics</Link></li>
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/best_seller">Best Seller</Link>
+                                <Link className="nav-link" to="/bestseller">Best Seller</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/new_release">New Realease</Link>
+                                <Link className="nav-link" to="/newrelease">New Realease</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/membership">Membership</Link>

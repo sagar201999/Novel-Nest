@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
-import Navbar from './Navbar';
 
 
 const Description = () => {
@@ -21,7 +20,6 @@ const Description = () => {
 
   return (
     <>
-      <Navbar />
 
       <div className='container text-light mt-5'>
         <section className='section-1 d-flex justify-content-evenly flex-wrap'>
