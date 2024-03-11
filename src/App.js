@@ -25,6 +25,8 @@ import NavfooterTemplate from './Template/navfooterTemplate';
 // genre
 import Action from './Components/Genre/action';
 import Manga from './Components/Genre/manga';
+import Login from './Components/Pages/login';
+import Popularbooks from './Components/Pages/popularbooks';
 
 function App() {
   return (
@@ -34,14 +36,17 @@ function App() {
           {/*error */}
           <Route path='*' element={<Error />} />
 
+          {/* login */}
+          <Route path='/' element={<Login />} />
           {/* pages */}
-          <Route path='/' element={<NavfooterTemplate page={Home} />} />
+          <Route path='/home' element={<NavfooterTemplate page={Home} />} />
           {/* <Route path='/' element={<Home /> }/> */}
           <Route path='/bestseller' element={<NavfooterTemplate page={BestSeller} />} />
           <Route path='/newrelease' element={<NavfooterTemplate page={NewRelease} />} />
           <Route path='/membership' element={<NavfooterTemplate page={Membership} />} />
           <Route path='/language' element={<NavfooterTemplate page={Language} />} />
           <Route path='/contact' element={<NavfooterTemplate page={Contact} />} />
+          <Route path='/home/popularBooks' element={<NavfooterTemplate page={Popularbooks} />} />
 
           {/* Genre */}
           <Route path='/action' element={<NavfooterTemplate page={Action} />} />

@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {   //© Copyright
   return (
     <>
-      <footer>
+      <footer className='bg-navy'>
         <div className='d-flex justify-content-around flex-wrap'>
           <div className='footer-box'>
             <p>About us</p>
@@ -42,9 +42,9 @@ const Footer = () => {   //© Copyright
 
           <div className='footer-box'>
             <p>Contact us</p>
-            <p>Address</p>
-            <p>Email</p>
-            <p>Phone</p>
+            <p>xyz streel , no 123 , india</p>
+            <p>info.novelnest@gmail.com</p>
+            <p>632 - 521 - 4585</p>
           </div>
 
         </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Carousel = () => {
+const Slider = () => {
     return (
         <>
 
@@ -29,4 +29,4 @@ const Carousel = () => {
     )
 }
 
-export default Carousel;
+export default Slider;

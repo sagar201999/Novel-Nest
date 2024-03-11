@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 
 const Description = () => {
@@ -9,7 +9,7 @@ const Description = () => {
   const [books, setBooks] = useState(null);
 
   useEffect(() => {
-    fetch(`https://apigenerator.dronahq.com/api/I99wj9Gr/comics/${comicsID}`)       //fetch api data
+    fetch(`https://apigenerator.dronahq.com/api/roEYsGNJ/popular/${comicsID}`)       //fetch api data
       .then(res => res.json())
       .then((book) => setBooks(book));
   }, [comicsID]);
@@ -21,10 +21,10 @@ const Description = () => {
   return (
     <>
 
-      <div className='container text-light mt-5'>
-        <section className='section-1 d-flex justify-content-evenly flex-wrap'>
+      <div className='text-light bg-navy py-5'>
+        <section className='container des-section-1 d-flex justify-content-evenly flex-wrap'>
           <img src={books.image} alt='' />
-          <main className='w-50 des-wrapper-sec1'>
+          <main className='des-wrapper-sec1'>
             <div className='p-4'>
               <h3>{books.title}</h3>
               <p><span>by</span> {books.author} <span>| date</span></p>
@@ -54,6 +54,37 @@ const Description = () => {
               </div>
             </div>
           </main>
+        </section>
+
+        <section className='des-section-2 mt-5'>
+          <div className='about-author'>
+            <p className='my-3'>About the Author</p>
+            <div className='d-flex'>
+              <img src='' alt='' className='' />
+              <p>author name</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Numquam ut aperiam dolor. Eos est consectetur. nulla, eum dolorum provident aperiam eos modi harum.
+              Eos est consectetur. nulla, eum dolorum provident aperiam eos modi harum.
+            </p>
+            <hr className='my-5' />
+            <div className='d-flex justify-content-between'>
+              <Link to=''>Others Books</Link>
+              <Link to=''>View All</Link>
+            </div>
+          </div>
+          <div className='author-description'>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo tenetur minima,
+              fuga, eaque totam obcaecati placeat nulla, eum dolorum provident aperiam eos modi harum. Fugit quisquam
+              mollitia corrupti dolor cumque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae saepe debitis et ratione quam repellendus facere, enim reiciendis provident amet, iste laudantium nostrum ut repellat eos quo maiores deserunt voluptas!
+              Aliquid, culpa sint! Suscipit, accusamus vero. Modi error repellat temporibus similique exercitationem 
+              eveniet iste adipisci, culpa aspernatur accusantium. Quaerat minima sed labore nostrum excepturi asperiores rerum amet,
+               corrupti iure ipsum?
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto alias in, temporibus beatae, voluptatibus aliquam facilis perferendis, illo modi aperiam ad amet nostrum nobis voluptas nesciunt quos necessitatibus odit libero!
+               Corporis consectetur quod voluptates animi fugiat pariatur molestias sit expedita eligendi est iusto, esse modi ducimus fuga aspernatur architecto sed quaerat saepe suscipit officiis, necessitatibus molestiae. Quae magni quidem consectetur.
+               Qui illo fuga cum aliquam pariatur, eius numquam assumenda. Numquam alias doloremque earum nostrum id dicta tenetur praesentium debitis quae, minus molestias soluta. Temporibus molestias laborum tenetur ullam sapiente maxime.</p>
+          </div>
+
         </section>
 
 
