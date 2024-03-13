@@ -71,15 +71,17 @@ const Login = () => {
                         <div className="form-row">
                             <div className="col-md-12 mb-3">
                                 <div className="input-group">
-                                    <button type="button" className="form-control" required>
-                                        Login with google
-                                    </button>
+                                    <Link to='/home' type="button" className="form-control d-flex justify-content-center align-items-center" required>
+                                        <img src='../../../assets/google.png' alt='google' style={{width : '23px'}} />
+                                        <span className='text-dark mx-3'>Login with <span className='text-dark fw-bolder'>google</span></span>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="col-md-12 mb-3">
                                 <div className="input-group">
-                                    <button type="button" className="form-control" required>
-                                        Login with facebook
+                                <button type="button" className="form-control d-flex justify-content-center align-items-center" required>
+                                        <img src='../../../assets/facebook.png' alt='facebook' style={{width : '23px'}} />
+                                        <span className='text-dark ms-3'>Login with <span className='text-dark fw-bolder'>facebook</span></span>
                                     </button>
                                 </div>
                             </div>
